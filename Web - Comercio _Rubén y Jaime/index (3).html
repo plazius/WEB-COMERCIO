@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoraciones Rodrisol S.L.</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-asfalto: #141414;
+            --color-hormigon: #e4e2dd;
+            --color-spray: #ff5a1f;
+            --color-cinta: #f5d90a;
+            --color-gris: #7a7a7a;
+
+            --font-titulo: "Anton", sans-serif;
+            --font-texto: "Archivo", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-hormigon text-asfalto font-texto">
+
+    <header class="border-b-4 border-asfalto">
+        <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row md:justify-between md:items-end gap-2">
+            <h1 class="font-titulo uppercase text-4xl md:text-5xl">Decoraciones Rodri<span class="text-spray">sol</span> S.L.</h1>
+            <p class="text-lg">Los mejores materiales para una decoración increíble</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4">
+
+        <section class="py-12">
+            <h2 class="font-titulo uppercase text-4xl md:text-6xl mb-8">Nuestros productos</h2>
+
+            <div class="flex flex-wrap gap-6">
+                <div class="tarjeta grow basis-56 border-4 border-asfalto bg-hormigon">
+                    <img src="img/pinturas.jpg" alt="Pinturas" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl p-4 border-t-4 border-asfalto">Pinturas</p>
+                </div>
+
+                <div class="tarjeta grow basis-56 border-4 border-asfalto bg-hormigon">
+                    <img src="img/herramientas-para-pintar.jpg.webp" alt="Material" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl p-4 border-t-4 border-asfalto">Material</p>
+                </div>
+
+                <div class="tarjeta grow basis-56 border-4 border-asfalto bg-hormigon">
+                    <img src="img/barnices.jpg" alt="Barnices" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl p-4 border-t-4 border-asfalto">Barnices</p>
+                </div>
+
+                <div class="tarjeta grow basis-56 border-4 border-asfalto bg-hormigon">
+                    <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl p-4 border-t-4 border-asfalto">Proyectos</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:items-center gap-6 mt-12">
+                <p class="text-lg md:w-2/3">
+                    ¿Necesitas tu tienda? Te asesoramos con los mejores
+                    productos para tu proyecto. ¡Te buscamos la mejor
+                    solución con un presupuesto estimado!
+                </p>
+
+                <button class="boton sombra bg-asfalto text-hormigon px-6 py-3 uppercase font-bold">Quiero mi asesoramiento gratuito</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="bg-asfalto text-hormigon">
+        <div class="max-w-6xl mx-auto px-4 py-12 flex flex-wrap gap-8">
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl text-spray mb-4">Pinturas</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Plástica</li>
+                    <li>En spray</li>
+                    <li>Base agua</li>
+                    <li>Temple</li>
+                </ul>
+            </section>
+
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl text-spray mb-4">Material</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Rodillos</li>
+                    <li>Brochas</li>
+                    <li>Escaleras</li>
+                    <li>Pinceles</li>
+                    <li>Máscaras</li>
+                </ul>
+            </section>
+
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl text-spray mb-4">Barnices</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Madera</li>
+                    <li>Chapa</li>
+                    <li>Brillante</li>
+                    <li>Resistente</li>
+                </ul>
+            </section>
+
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl text-spray mb-4">Disolventes</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Al agua</li>
+                    <li>Alcohol</li>
+                    <li>En polvo</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer class="border-t-4 border-spray">
+        <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row sm:justify-between gap-2">
+            <h2 class="font-titulo uppercase text-2xl">Sobre nosotros</h2>
+            <a href="#" class="enlace">Contacto</a>
+            <a href="#" class="enlace">Preguntas frecuentes</a>
+        </div>
+    </footer>
+
+</body>
+</html>

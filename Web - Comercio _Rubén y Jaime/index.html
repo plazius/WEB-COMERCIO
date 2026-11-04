@@ -1,98 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decoraciones Rodrisol S.L.</title>
-</head>
-<body>
 
-    <header>
-        <h1>DECORACIONES RODRISOL S.L.</h1>
-        <p>Los mejores materiales para una decoración increíble</p>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-titulo: "Anton", sans-serif;
+            --font-texto: "Archivo", sans-serif;
+        }
+    </style>
+</head>
+<body class="font-texto">
+
+    <header class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row md:justify-between md:items-end gap-2 border-b-2">
+        <h1 class="font-titulo uppercase text-4xl md:text-5xl">Decoraciones Rodrisol S.L.</h1>
+        <p class="text-lg">Los mejores materiales para una decoración increíble</p>
     </header>
 
-    <main>
+    <main class="max-w-6xl mx-auto px-4">
 
-        <section>
-            <h2>Nuestros productos</h2>
+        <section class="py-12">
+            <h2 class="font-titulo uppercase text-4xl md:text-6xl mb-8">Nuestros productos</h2>
 
-            <div>
-                <img src="Imágenes/pinturas.jpg" alt="Pinturas">
-                <p>Pinturas</p>
+            <div class="flex flex-wrap gap-6">
+                <div class="grow basis-56">
+                    <img src="img/pinturas.jpg" alt="Pinturas" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl mt-2">Pinturas</p>
+                </div>
+
+                <div class="grow basis-56">
+                    <img src="img/materiales.jpg" alt="Material" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl mt-2">Material</p>
+                </div>
+
+                <div class="grow basis-56">
+                    <img src="img/barnices.jpg" alt="Barnices" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl mt-2">Barnices</p>
+                </div>
+
+                <div class="grow basis-56">
+                    <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
+                    <p class="font-titulo uppercase text-2xl mt-2">Proyectos</p>
+                </div>
             </div>
 
-            <div>
-                <img src="Imágenes/materiales.jpg" alt="Material">
-                <p>Material</p>
+            <div class="flex flex-col md:flex-row md:items-center gap-4 mt-10">
+                <p class="text-lg md:w-2/3">
+                    ¿Necesitas tu tienda? Te asesoramos con los mejores
+                    productos para tu proyecto. ¡Te buscamos la mejor
+                    solución con un presupuesto estimado!
+                </p>
+
+                <button class="border-2 px-6 py-3 uppercase font-bold">Quiero mi asesoramiento gratuito</button>
             </div>
-
-            <div>
-                <img src="Imágenes/barnices.jpg" alt="Barnices">
-                <p>Barnices</p>
-            </div>
-
-            <div>
-                <img src="Imágenes/mural.webp" alt="Proyectos">
-                <p>Proyectos</p>
-            </div>
-
-            <p>
-                ¿Necesitas tu tienda? Te asesoramos con los mejores
-                productos para tu proyecto. ¡Te buscamos la mejor
-                solución con un presupuesto estimado!
-            </p>
-
-            <button>Quiero mi asesoramiento gratuito</button>
         </section>
 
-        <section>
-            <h2>Pinturas</h2>
-            <ul>
-                <li>Plástica</li>
-                <li>En spray</li>
-                <li>Base agua</li>
-                <li>Temple</li>
-            </ul>
-        </section>
+        <div class="flex flex-wrap gap-8 py-12 border-t-2">
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl mb-4">Pinturas</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Plástica</li>
+                    <li>En spray</li>
+                    <li>Base agua</li>
+                    <li>Temple</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Material</h2>
-            <ul>
-                <li>Rodillos</li>
-                <li>Brochas</li>
-                <li>Escaleras</li>
-                <li>Pinceles</li>
-                <li>Brochas</li>
-                <li>Escaleras</li>
-                <li>Pinceles</li>
-            </ul>
-        </section>
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl mb-4">Material</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Rodillos</li>
+                    <li>Brochas</li>
+                    <li>Escaleras</li>
+                    <li>Pinceles</li>
+                    <li>Máscaras</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Barnices</h2>
-            <ul>
-                <li>Madera</li>
-                <li>Chapa</li>
-                <li>Brillante</li>
-                <li>Resistente</li>
-            </ul>
-        </section>
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl mb-4">Barnices</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Madera</li>
+                    <li>Chapa</li>
+                    <li>Brillante</li>
+                    <li>Resistente</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Disolventes</h2>
-            <ul>
-                <li>Al agua</li>
-                <li>Alcohol</li>
-                <li>En polvo</li>
-            </ul>
-        </section>
+            <section class="grow basis-48">
+                <h2 class="font-titulo uppercase text-3xl mb-4">Disolventes</h2>
+                <ul class="flex flex-col gap-1">
+                    <li>Al agua</li>
+                    <li>Alcohol</li>
+                    <li>En polvo</li>
+                </ul>
+            </section>
+        </div>
 
     </main>
 
-    <footer>
-        <h2>Sobre nosotros</h2>
+    <footer class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row sm:justify-between gap-2 border-t-2">
+        <h2 class="font-titulo uppercase text-2xl">Sobre nosotros</h2>
         <p>Contacto</p>
         <p>Preguntas frecuentes</p>
     </footer>

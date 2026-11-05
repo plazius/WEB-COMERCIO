@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyectos | Decoraciones Rodrisol S.L.</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body {
+            font-family: "Archivo", sans-serif;
+            background-color: #e4e2dd;
+            color: #141414;
+        }
+
+        h1, h2, h3, .logo {
+            font-family: "Anton", sans-serif;
+        }
+
+        .oscuro {
+            background-color: #141414;
+            color: #e4e2dd;
+        }
+
+        .tarjeta {
+            border: 4px solid #141414;
+            box-shadow: 7px 7px 0 #ff5a1f;
+            margin-bottom: 50px;
+        }
+
+        .oscuro .tarjeta {
+            background-color: #222;
+            border-color: #e4e2dd;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .boton:hover {
+            background-color: #ff5a1f;
+            color: #141414;
+        }
+
+        @media (max-width: 768px) {
+            .tarjeta img {
+                height: 260px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="transition-colors duration-300">
+
+
+    <header class="sticky top-0 bg-[#e4e2dd] border-b-4 border-[#141414] z-50">
+
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+
+            <a href="index.html" class="logo text-3xl uppercase">
+                Rodri<span class="text-[#ff5a1f]">sol</span>
+            </a>
+
+            <nav class="hidden md:flex gap-6 font-bold uppercase text-sm">
+
+                <a href="index.html#productos" class="hover:text-[#ff5a1f]">Productos</a>
+                <a href="index.html#pinturas" class="hover:text-[#ff5a1f]">Pinturas</a>
+                <a href="index.html#material" class="hover:text-[#ff5a1f]">Material</a>
+                <a href="index.html#barnices" class="hover:text-[#ff5a1f]">Barnices</a>
+                <a href="index.html#ofertas" class="hover:text-[#ff5a1f]">Ofertas</a>
+                <a href="index.html#horario" class="hover:text-[#ff5a1f]">Dónde</a>
+
+            </nav>
+
+            <div class="flex gap-2">
+
+                <button id="boton-modo"
+                    class="boton border-2 border-[#141414] px-3 py-2 font-bold uppercase text-sm">
+                    Oscuro
+                </button>
+
+                <button id="boton-menu"
+                    class="md:hidden bg-[#ff5a1f] border-2 border-[#141414] px-3 py-2 font-bold">
+                    Menú
+                </button>
+
+            </div>
+
+        </div>
+
+        <nav id="menu-movil" class="hidden flex-col p-4 font-bold uppercase md:hidden">
+
+            <a href="index.html#productos" class="py-2">Productos</a>
+            <a href="index.html#pinturas" class="py-2">Pinturas</a>
+            <a href="index.html#material" class="py-2">Material</a>
+            <a href="index.html#barnices" class="py-2">Barnices</a>
+            <a href="index.html#ofertas" class="py-2">Ofertas</a>
+            <a href="index.html#horario" class="py-2">Dónde</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="max-w-6xl mx-auto px-5 py-20">
+
+            <div class="grid md:grid-cols-2 gap-10 items-end">
+
+                <div>
+
+                    <p class="text-[#ff5a1f] font-bold uppercase mb-3">
+                        Decoración · Diseño · Creatividad
+                    </p>
+
+                    <h1 class="text-6xl md:text-8xl uppercase leading-none">
+                        NUESTROS
+                        <span class="text-[#ff5a1f]">PROYECTOS</span>
+                    </h1>
+
+                </div>
+
+                <div>
+
+                    <p class="text-lg leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    </p>
+
+                    <a href="#galeria"
+                        class="boton inline-block bg-[#141414] text-[#e4e2dd] border-2 border-[#141414] px-6 py-3 mt-6 font-bold uppercase">
+                        DESCUBRIR PROYECTOS
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="bg-[#f5d90a] text-[#141414] border-y-4 border-[#141414] py-3">
+
+            <p class="logo text-2xl text-center uppercase">
+                DECORACIÓN · PINTURA · DISEÑO · CREATIVIDAD · TRANSFORMAMOS ESPACIOS ·
+            </p>
+
+        </div>
+        <section id="galeria" class="max-w-5xl mx-auto px-5 py-20">
+
+            <div class="mb-12">
+
+                <h2 class="text-5xl md:text-6xl uppercase">
+                    TRABAJOS REALIZADOS CON NUESTRO MATERIAL<span class="text-[#ff5a1f]">.</span>
+                </h2>
+
+                <p class="text-[#7a7a7a] mt-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                </p>
+
+            </div>
+
+
+            <article class="tarjeta bg-[#e4e2dd]">
+
+                <img src="img/mural.webp" alt="Proyecto de decoración mural">
+
+                <div class="p-6">
+
+                    <p class="text-[#ff5a1f] font-bold uppercase text-sm mb-2">
+                        ARTISTA
+                    </p>
+
+                    <h3 class="text-3xl md:text-4xl uppercase mb-3">
+                        PROYECTO 1
+                    </h3>
+
+                    <p class="leading-relaxed">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod minus eum enim delectus quibusdam sit ipsam veritatis excepturi explicabo? Necessitatibus distinctio maxime nulla labore quod officia porro, tempore blanditiis repellendus.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="tarjeta bg-[#e4e2dd]">
+
+                <img src="img/pinturas.jpg" alt="Proyecto relacionado con pinturas">
+
+                <div class="p-6">
+
+                    <p class="text-[#ff5a1f] font-bold uppercase text-sm mb-2">
+                        ARTISTA
+                    </p>
+
+                    <h3 class="text-3xl md:text-4xl uppercase mb-3">
+                        PROYECTO 2
+                    </h3>
+
+                    <p class="leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="tarjeta bg-[#e4e2dd]">
+
+                <img src="img/materiales.jpg" alt="Materiales de un proyecto">
+
+                <div class="p-6">
+
+                    <p class="text-[#ff5a1f] font-bold uppercase text-sm mb-2">
+                        ARTISTA
+                    </p>
+
+                    <h3 class="text-3xl md:text-4xl uppercase mb-3">
+                        PROYECTO 3
+                    </h3>
+
+                    <p class="leading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="tarjeta bg-[#e4e2dd]">
+
+                <img src="img/barnices.jpg" alt="Trabajo de barnizado">
+
+                <div class="p-6">
+
+                    <p class="text-[#ff5a1f] font-bold uppercase text-sm mb-2">
+                        ARTISTA
+                    </p>
+
+                    <h3 class="text-3xl md:text-4xl uppercase mb-3">
+                        PROYECTO 4
+                    </h3>
+
+                    <p class="leading-relaxed">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="bg-[#141414] text-[#e4e2dd] border-t-4 border-[#141414]">
+
+            <div class="max-w-6xl mx-auto px-5 py-16 text-center">
+
+                <h2 class="text-4xl md:text-6xl uppercase mb-5">
+                    ¿TIENES UN PROYECTO EN MENTE?
+                </h2>
+
+                <p class="mb-7">
+                    Estamos aquí para ayudarte a darle forma a tus ideas.
+                </p>
+
+                <a href="index.html#horario"
+                    class="boton inline-block bg-[#ff5a1f] text-[#141414] border-2 border-[#e4e2dd] px-7 py-3 font-bold uppercase">
+                    CONTACTA CON NOSOTROS →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer class="bg-[#e4e2dd] text-[#141414] p-6">
+
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-4">
+
+            <p class="logo text-2xl uppercase">
+                RODRI<span class="text-[#ff5a1f]">SOL</span> S.L.
+            </p>
+
+            <p class="text-sm">
+                © 2026 Decoraciones Rodrisol S.L. 
+            </p>
+
+            <a href="index.html" class="font-bold uppercase text-sm">
+                Volver al inicio ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decoraciones Rodrisol S.L.</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+
+    @theme {
+      --color-asfalto: #141414;
+      --color-hormigon: #e4e2dd;
+      --color-spray: #ff5a1f;
+      --color-cinta: #f5d90a;
+      --color-gris: #7a7a7a;
+
+      --font-titulo: "Anton", sans-serif;
+      --font-texto: "Archivo", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden bg-hormigon text-asfalto font-texto dark:bg-asfalto dark:text-hormigon">
+
+  <header class="sticky top-0 z-10 bg-hormigon dark:bg-asfalto border-b-4 border-asfalto dark:border-hormigon">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="#inicio" class="font-titulo text-3xl uppercase">Rodri<span class="text-spray">sol</span></a>
+
+      <nav class="hidden md:flex gap-8 uppercase font-bold text-sm">
+        <a href="#productos" class="enlace">Productos</a>
+        <a href="#pinturas" class="enlace">Pinturas</a>
+        <a href="#material" class="enlace">Material</a>
+        <a href="#barnices" class="enlace">Barnices</a>
+        <a href="proyectos.html" class="enlace">Proyectos</a>
+        <a href="#ofertas" class="enlace">Ofertas</a>
+        <a href="#horario" class="enlace">Dónde</a>
+      </nav>
+
+      <div class="flex gap-2">
+        <button id="boton-modo" class="boton border-2 px-3 py-1 uppercase font-bold text-sm">Oscuro</button>
+        <button id="boton-menu" class="boton bg-spray text-asfalto px-3 py-1 uppercase font-bold text-sm md:hidden">Menú</button>
+      </div>
+    </div>
+
+    <nav id="menu-movil" class="hidden flex-col px-4 pb-4 uppercase font-titulo text-3xl md:hidden">
+      <a href="#productos" class="py-1 hover:text-spray">Productos</a>
+      <a href="#pinturas" class="py-1 hover:text-spray">Pinturas</a>
+      <a href="#material" class="py-1 hover:text-spray">Material</a>
+      <a href="#barnices" class="py-1 hover:text-spray">Barnices</a>
+      <a href="proyectos.html" class="py-1 hover:text-spray">Proyectos</a>
+      <a href="#ofertas" class="py-1 hover:text-spray">Ofertas</a>
+      <a href="#horario" class="py-1 hover:text-spray">Dónde</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="max-w-6xl mx-auto px-4 py-16 md:py-28 flex flex-col md:flex-row md:items-end gap-8">
+      <h1 class="aparecer font-titulo uppercase text-6xl md:text-8xl w-[66%]">
+        Decoraciones<br>Rodri<span class="text-spray">sol</span> S.L.
+      </h1>
+      <div class="w-[33%]">
+        <p class="text-lg">Los mejores materiales para una decoración increíble.</p>
+        <a href="#productos" class="boton sombra inline-block mt-6 bg-asfalto text-hormigon dark:bg-hormigon dark:text-asfalto px-6 py-3 uppercase font-bold">Ver productos →</a>
+      </div>
+    </section>
+
+    <div class="bg-cinta text-asfalto overflow-hidden py-2 -rotate-1 border-y-4 border-asfalto">
+      <p class="cinta font-titulo uppercase text-2xl whitespace-nowrap">
+        Pinturas · Material · Barnices · Disolventes · Proyectos · Asesoramiento gratuito · Pinturas · Material · Barnices · Disolventes · Proyectos · Asesoramiento gratuito ·
+      </p>
+    </div>
+
+    <section id="productos" class="max-w-6xl mx-auto px-4 py-20">
+      <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10">Nuestros productos</h2>
+
+      <div class="flex flex-wrap gap-6">
+        <a href="pinturas.html" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" data-aos="fade-up">
+          <img src="img/pinturas.jpg" alt="Pinturas" class="w-full h-56 object-cover">
+          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Pinturas</p>
+        </a>
+
+        <a href="#material" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" data-aos="fade-up">
+          <img src="img/materiales.jpg" alt="Material" class="w-full h-56 object-cover">
+          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Material</p>
+        </a>
+
+        <a href="#barnices" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" data-aos="fade-up">
+          <img src="img/barnices.jpg" alt="Barnices" class="w-full h-56 object-cover">
+          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Barnices</p>
+        </a>
+
+        <a href="proyectos.html" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" data-aos="fade-up">
+          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
+          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
+        </a>
+      </div>
+
+      <div id="asesoramiento" class="flex flex-col md:flex-row md:items-center gap-6 mt-16" data-aos="fade-up">
+        <p class="text-xl md:w-2/3">
+          ¿Necesitas tu tienda? Te asesoramos con los mejores productos para tu proyecto.
+          ¡Te buscamos la mejor solución con un presupuesto estimado!
+        </p>
+        <a href="tel:652686819" class="boton sombra bg-spray text-asfalto px-6 py-3 uppercase font-bold text-center">Quiero mi asesoramiento gratuito</a>
+      </div>
+    </section>
+
+    <section id="pinturas" class="max-w-6xl mx-auto px-4 pb-20">
+      <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10">Pinturas</h2>
+
+      <div class="flex flex-col border-t-2 border-current">
+        <article class="fila flex items-center gap-4 py-6 border-b-2 border-current" data-aos="fade-up">
+          <span class="font-titulo text-3xl text-gris">01</span>
+          <h3 class="font-titulo uppercase text-3xl md:text-5xl flex-1">Plástica</h3>
+          <span class="w-10 h-10 bg-cinta"></span>
+        </article>
+
+        <article class="fila flex items-center gap-4 py-6 border-b-2 border-current" data-aos="fade-up">
+          <span class="font-titulo text-3xl text-gris">02</span>
+          <h3 class="font-titulo uppercase text-3xl md:text-5xl flex-1">En spray</h3>
+          <span class="w-10 h-10 bg-spray"></span>
+        </article>
+
+        <article class="fila flex items-center gap-4 py-6 border-b-2 border-current" data-aos="fade-up">
+          <span class="font-titulo text-3xl text-gris">03</span>
+          <h3 class="font-titulo uppercase text-3xl md:text-5xl flex-1">Base agua</h3>
+          <span class="w-10 h-10 bg-[#4f8fd6]"></span>
+        </article>
+
+        <article class="fila flex items-center gap-4 py-6 border-b-2 border-current" data-aos="fade-up">
+          <span class="font-titulo text-3xl text-gris">04</span>
+          <h3 class="font-titulo uppercase text-3xl md:text-5xl flex-1">Temple</h3>
+          <span class="w-10 h-10 bg-[#9fb7a0]"></span>
+        </article>
+      </div>
+    </section>
+
+    <section id="material" class="bg-asfalto text-hormigon dark:bg-hormigon dark:text-asfalto">
+      <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col md:flex-row gap-10">
+        <div class="md:w-1/3">
+          <h2 class="font-titulo uppercase text-5xl md:text-7xl">Material</h2>
+          <p class="mt-4">Todo lo que necesitas antes de abrir el bote.</p>
+        </div>
+
+        <div class="md:w-2/3 flex flex-wrap gap-3 content-start">
+          <span class="etiqueta border-2 border-current px-5 py-3 font-titulo uppercase text-2xl" data-aos="zoom-in">Rodillos</span>
+          <span class="etiqueta border-2 border-current px-5 py-3 font-titulo uppercase text-2xl" data-aos="zoom-in">Brochas</span>
+          <span class="etiqueta border-2 border-current px-5 py-3 font-titulo uppercase text-2xl" data-aos="zoom-in">Escaleras</span>
+          <span class="etiqueta border-2 border-current px-5 py-3 font-titulo uppercase text-2xl" data-aos="zoom-in">Pinceles</span>
+          <span class="etiqueta border-2 border-current px-5 py-3 font-titulo uppercase text-2xl" data-aos="zoom-in">Máscaras</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col md:flex-row gap-12">
+      <section id="barnices" class="md:w-1/2" data-aos="fade-right">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-8">Barnices</h2>
+        <ul class="flex flex-col border-t-2 border-current">
+          <li class="fila font-titulo uppercase text-3xl py-4 border-b-2">Madera</li>
+          <li class="fila font-titulo uppercase text-3xl py-4 border-b-2">Chapa</li>
+          <li class="fila font-titulo uppercase text-3xl py-4 border-b-2">Brillante</li>
+          <li class="fila font-titulo uppercase text-3xl py-4 border-b-2">Resistente</li>
+        </ul>
+      </section>
+
+      <section id="disolventes" class="md:w-1/2" data-aos="fade-left">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-8">Disolventes</h2>
+        <ul class="flex flex-col border-t-2 border-current">
+          <li class="fila font-titulo uppercase text-3xl py-4 border-b-2">Al agua</li>
+          <li class="fila font-titulo uppercase text-3xl py-4 border-b-2">Alcohol</li>
+          <li class="fila font-titulo uppercase text-3xl py-4 border-b-2">En polvo</li>
+        </ul>
+      </section>
+    </div>
+
+    <section id="ofertas" class="bg-spray text-asfalto">
+      <div class="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row md:items-center gap-10">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl w-[33%]">Ofertas</h2>
+
+        <div class="w-[66%] flex flex-col sm:flex-row gap-6">
+          <p class="pegatina bg-asfalto text-hormigon p-6 font-titulo uppercase text-3xl rotate-2">-20% en plástica</p>
+          <p class="pegatina bg-cinta text-asfalto p-6 font-titulo uppercase text-3xl -rotate-2">Rodillo gratis con 2 botes</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="horario" class="max-w-6xl mx-auto px-4 py-20 flex flex-col md:flex-row gap-10">
+      <div class="md:w-1/2" data-aos="fade-up">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-8">Dónde</h2>
+
+        <p class="flex justify-between border-b-2  py-3"><span class="font-bold">Lun – Vie</span><span>9:30–13:30 / 16:30–20:00</span></p>
+        <p class="flex justify-between border-b-2  py-3"><span class="font-bold">Sábado</span><span>10:00–13:30</span></p>
+        <p class="flex justify-between border-b-2  py-3"><span class="font-bold">Domingo</span><span>Cerrado</span></p>
+
+        <address class="not-italic mt-8">
+          <p>Av. de Monforte de Lemos, 163, Fuencarral-El Pardo, 28029 Madrid</p>
+          <a href="tel:652686819" class="enlace font-bold">652686819</a>
+        </address>
+      </div>
+
+      <iframe src="https://www.google.com/maps?q=Av.%20de%20Monforte%20de%20Lemos%20163%2C%2028029%20Madrid&output=embed" class="md:w-1/2 h-80 border-4 border-asfalto dark:border-hormigon" loading="lazy" title="Ubicación de Decoraciones Rodrisol"></iframe>
+    </section>
+
+  </main>
+
+  <footer class="bg-asfalto text-hormigon border-t-4 border-spray">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <h2 class="font-titulo uppercase text-2xl">Sobre nosotros</h2>
+      <a href="#horario" class="enlace">Contacto</a>
+      <a href="#" class="enlace">Preguntas frecuentes</a>
+      <p class="text-sm text-gris">© 2026 Decoraciones Rodrisol S.L.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

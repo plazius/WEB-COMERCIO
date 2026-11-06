@@ -191,7 +191,7 @@
                     <p class="leading-relaxed">
                         Este proyecto requería gran coordinación para gestionar la gran cantidad de material y transportarla a Málaga, dónde OLOR A PINTURA , en concreto Cise Y Hinak, participaban con esta obra en el concurso de murales de gran tamaño.                  
                     </p>
-
+Ejemplo
                 </div>
 
             </article>
@@ -312,6 +312,50 @@ Para este proyecto de decoración en As Burger, combinamos materiales de alta ca
 
     </footer>
 
+
+    <script>
+
+        // MODO OSCURO
+
+        const botonModo = document.getElementById("boton-modo");
+
+        botonModo.onclick = function() {
+
+            document.body.classList.toggle("oscuro");
+
+            if (document.body.classList.contains("oscuro")) {
+                botonModo.textContent = "Claro";
+            } else {
+                botonModo.textContent = "Oscuro";
+            }
+
+        };
+
+
+        // MENÚ MÓVIL
+        const botonMenu = document.getElementById("boton-menu");
+        const menuMovil = document.getElementById("menu-movil");
+
+        botonMenu.onclick = function() {
+
+            menuMovil.classList.toggle("hidden");
+            menuMovil.classList.toggle("flex");
+
+        };
+
+
+        const enlaces = menuMovil.querySelectorAll("a");
+
+        enlaces.forEach(function(enlace) {
+
+            enlace.onclick = function() {
+                menuMovil.classList.add("hidden");
+                menuMovil.classList.remove("flex");
+            };
+
+        });
+
+    </script>
 
 </body>
 </html>

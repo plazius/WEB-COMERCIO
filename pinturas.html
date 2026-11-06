@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Decoraciones Rodrisol S.L.</title>
+  <title>Tienda | Decoraciones Rodrisol S.L.</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
@@ -31,15 +31,14 @@
 
   <header class="sticky top-0 z-10 bg-hormigon dark:bg-asfalto border-b-4 border-asfalto dark:border-hormigon">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
-      <a href="#inicio" class="font-titulo text-3xl uppercase">Rodri<span class="text-spray">sol</span></a>
+      <a href="index.html" class="font-titulo text-3xl uppercase">Rodri<span class="text-spray">sol</span></a>
 
       <nav class="hidden md:flex gap-8 uppercase font-bold text-sm">
-        <a href="#productos" class="enlace">Productos</a>
+        <a href="index.html" class="enlace">Inicio</a>
         <a href="#pinturas" class="enlace">Pinturas</a>
-        <a href="#material" class="enlace">Material</a>
         <a href="#barnices" class="enlace">Barnices</a>
-        <a href="#ofertas" class="enlace">Ofertas</a>
-        <a href="#horario" class="enlace">Dónde</a>
+        <a href="#material" class="enlace">Material</a>
+        <a href="#disolventes" class="enlace">Disolventes</a>
       </nav>
 
       <div class="flex gap-2">
@@ -49,119 +48,255 @@
     </div>
 
     <nav id="menu-movil" class="hidden flex-col px-4 pb-4 uppercase font-titulo text-3xl md:hidden">
-      <a href="#productos" class="py-1 hover:text-spray">Productos</a>
+      <a href="index.html" class="py-1 hover:text-spray">Inicio</a>
       <a href="#pinturas" class="py-1 hover:text-spray">Pinturas</a>
-      <a href="#material" class="py-1 hover:text-spray">Material</a>
       <a href="#barnices" class="py-1 hover:text-spray">Barnices</a>
-      <a href="#ofertas" class="py-1 hover:text-spray">Ofertas</a>
-      <a href="#horario" class="py-1 hover:text-spray">Dónde</a>
+      <a href="#material" class="py-1 hover:text-spray">Material</a>
+      <a href="#disolventes" class="py-1 hover:text-spray">Disolventes</a>
     </nav>
   </header>
 
   <main>
-    <section id="inicio" class="max-w-6xl mx-auto px-4 py-16 md:py-28 flex flex-col md:flex-row md:items-end gap-8">
-      <h1 class="aparecer font-titulo uppercase text-6xl md:text-8xl w-[66%]">
-        Decoraciones<br>Rodri<span class="text-spray">sol</span> S.L.
+
+    <section class="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row md:items-end gap-6">
+      <h1 class="aparecer font-titulo uppercase text-6xl md:text-8xl leading-none md:w-2/3">
+        La <span class="text-spray">tienda</span>
       </h1>
-      <div class="w-[33%]">
-        <p class="text-lg">Los mejores materiales para una decoración increíble.</p>
-        <a href="#productos" class="boton sombra inline-block mt-6 bg-asfalto text-hormigon dark:bg-hormigon dark:text-asfalto px-6 py-3 uppercase font-bold">Ver productos →</a>
-      </div>
+      <p class="text-lg md:w-1/3">Elige lo que necesitas y te lo preparamos para recoger en el local.</p>
     </section>
 
-    <section id="productos" class="max-w-6xl mx-auto px-4 py-20" bg-aslfato>
-      <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10">pintura plástica</h2>
+    <div class="max-w-6xl mx-auto px-4 flex flex-wrap gap-3">
+      <button class="filtro etiqueta border-2 border-current px-5 py-2 font-titulo uppercase text-xl bg-spray text-asfalto" data-filtro="todo">Todo</button>
+      <button class="filtro etiqueta border-2 border-current px-5 py-2 font-titulo uppercase text-xl" data-filtro="pinturas">Pinturas</button>
+      <button class="filtro etiqueta border-2 border-current px-5 py-2 font-titulo uppercase text-xl" data-filtro="barnices">Barnices</button>
+      <button class="filtro etiqueta border-2 border-current px-5 py-2 font-titulo uppercase text-xl" data-filtro="material">Material</button>
+      <button class="filtro etiqueta border-2 border-current px-5 py-2 font-titulo uppercase text-xl" data-filtro="disolventes">Disolventes</button>
+    </div>
+
+    <section id="pinturas" class="categoria max-w-6xl mx-auto px-4 py-16" data-categoria="pinturas">
+      <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Pinturas</h2>
 
       <div class="flex flex-wrap gap-6">
-        <a href="pinturas.html" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto">
-          <img src="img/pinturas.jpg" alt="Pinturas" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Pinturas</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/pintu_blanca.jpg" alt="Pintura plástica" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Plástica mate blanca</h3>
+            <p class="text-gris">Bote de 15 L</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">34,95 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Plástica mate blanca" data-precio="34.95">Añadir</button>
+          </div>
+        </article>
 
-        <a href="#material" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto">
-          <img src="img/materiales.jpg" alt="Material" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Material</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/spray_esmalte.jpg" alt="Pintura en spray" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Spray esmalte</h3>
+            <p class="text-gris">400 ml · varios colores</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">6,95 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Spray esmalte" data-precio="6.95">Añadir</button>
+          </div>
+        </article>
 
-        <a href="#barnices" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/barnices.jpg" alt="Barnices" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Barnices</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/esmalte_agua.jpg" alt="Pintura base agua" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Esmalte base agua</h3>
+            <p class="text-gris">750 ml · sin olor</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">14,90 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Esmalte base agua" data-precio="14.90">Añadir</button>
+          </div>
+        </article>
 
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
-
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
-                
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
-                
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
-            
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/temple.webp" alt="Pintura al temple" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Temple</h3>
+            <p class="text-gris">Saco de 5 kg</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">9,95 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Temple" data-precio="9.95">Añadir</button>
+          </div>
+        </article>
       </div>
-      
-
     </section>
-        <section id="productos" class="max-w-6xl mx-auto px-4 py-20" bg-aslfato>
-      <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10">pintura plástica</h2>
+
+    <section id="barnices" class="categoria bg-asfalto text-hormigon dark:bg-hormigon dark:text-asfalto" data-categoria="barnices">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Barnices</h2>
+
+        <div class="flex flex-wrap gap-6">
+          <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+            <img src="img/barniz_madera.jpg" alt="Barniz para madera" class="w-full h-48 object-cover">
+            <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+              <h3 class="font-titulo uppercase text-2xl">Barniz madera</h3>
+              <p class="text-gris">750 ml · satinado</p>
+              <p class="font-titulo text-3xl text-spray mt-auto pt-4">12,90 €</p>
+              <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Barniz madera" data-precio="12.90">Añadir</button>
+            </div>
+          </article>
+
+          <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+            <img src="img/barniz_chapa.jpg" alt="Barniz para chapa" class="w-full h-48 object-cover">
+            <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+              <h3 class="font-titulo uppercase text-2xl">Barniz chapa</h3>
+              <p class="text-gris">750 ml · antióxido</p>
+              <p class="font-titulo text-3xl text-spray mt-auto pt-4">13,50 €</p>
+              <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Barniz chapa" data-precio="13.50">Añadir</button>
+            </div>
+          </article>
+
+          <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+            <img src="img/barniz_brillo.jpg" alt="Barniz brillante" class="w-full h-48 object-cover">
+            <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+              <h3 class="font-titulo uppercase text-2xl">Barniz brillante</h3>
+              <p class="text-gris">750 ml · acabado espejo</p>
+              <p class="font-titulo text-3xl text-spray mt-auto pt-4">11,90 €</p>
+              <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Barniz brillante" data-precio="11.90">Añadir</button>
+            </div>
+          </article>
+
+          <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+            <img src="img/barniz_resis_ext.jpg" alt="Barniz resistente" class="w-full h-48 object-cover">
+            <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+              <h3 class="font-titulo uppercase text-2xl">Barniz resistente</h3>
+              <p class="text-gris">2,5 L · exterior</p>
+              <p class="font-titulo text-3xl text-spray mt-auto pt-4">29,95 €</p>
+              <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Barniz resistente" data-precio="29.95">Añadir</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="material" class="categoria max-w-6xl mx-auto px-4 py-16" data-categoria="material">
+      <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Material</h2>
 
       <div class="flex flex-wrap gap-6">
-        <a href="pinturas.html" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto">
-          <img src="img/pinturas.jpg" alt="Pinturas" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Pinturas</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/rodillo_22.jpg" alt="Rodillo" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Rodillo</h3>
+            <p class="text-gris">22 cm · pelo medio</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">7,50 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Rodillo" data-precio="7.50">Añadir</button>
+          </div>
+        </article>
 
-        <a href="#material" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto">
-          <img src="img/materiales.jpg" alt="Material" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Material</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/brocha_50.webp" alt="Brocha" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Brocha</h3>
+            <p class="text-gris">50 mm</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">4,20 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Brocha" data-precio="4.20">Añadir</button>
+          </div>
+        </article>
 
-        <a href="#barnices" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/barnices.jpg" alt="Barnices" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Barnices</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/pinceles.jpg" alt="Pinceles" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Pinceles</h3>
+            <p class="text-gris">Juego de 5</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">6,90 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Pinceles" data-precio="6.90">Añadir</button>
+          </div>
+        </article>
 
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/escaleras.jpg" alt="Escalera" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Escalera</h3>
+            <p class="text-gris">Aluminio · 4 peldaños</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">49,90 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Escalera" data-precio="49.90">Añadir</button>
+          </div>
+        </article>
 
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
-                
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
-                
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
-            
-        <a href="#proyectos" class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto" >
-          <img src="img/mural.webp" alt="Proyectos" class="w-full h-56 object-cover">
-          <p class="font-titulo uppercase text-3xl p-4 border-t-4 border-asfalto">Proyectos</p>
-        </a>
+        <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+          <img src="img/mascaras.jpg" alt="Máscaras" class="w-full h-48 object-cover">
+          <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+            <h3 class="font-titulo uppercase text-2xl">Máscaras</h3>
+            <p class="text-gris">Pack de 5 · FFP2</p>
+            <p class="font-titulo text-3xl text-spray mt-auto pt-4">8,95 €</p>
+            <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Máscaras" data-precio="8.95">Añadir</button>
+          </div>
+        </article>
       </div>
-      
-      
-
     </section>
-    
+
+    <section id="disolventes" class="categoria bg-spray text-asfalto" data-categoria="disolventes">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Disolventes</h2>
+
+        <div class="flex flex-wrap gap-6">
+          <article class="tarjeta grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+            <img src="img/disolvente_agua.webp" alt="Disolvente al agua" class="w-full h-48 object-cover">
+            <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+              <h3 class="font-titulo uppercase text-2xl">Disolvente al agua</h3>
+              <p class="text-gris">1 L</p>
+              <p class="font-titulo text-3xl mt-auto pt-4">5,95 €</p>
+              <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Disolvente al agua" data-precio="5.95">Añadir</button>
+            </div>
+          </article>
+
+          <article class="tarjeta grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+            <img src="img/alcohol.jpg" alt="Alcohol" class="w-full h-48 object-cover">
+            <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+              <h3 class="font-titulo uppercase text-2xl">Alcohol</h3>
+              <p class="text-gris">1 L</p>
+              <p class="font-titulo text-3xl mt-auto pt-4">3,90 €</p>
+              <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Alcohol" data-precio="3.90">Añadir</button>
+            </div>
+          </article>
+
+          <article class="tarjeta grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
+            <img src="img/disolvente_polvo.jpg" alt="Disolvente en polvo" class="w-full h-48 object-cover">
+            <div class="p-4 border-t-4 border-asfalto flex flex-col flex-1">
+              <h3 class="font-titulo uppercase text-2xl">Disolvente en polvo</h3>
+              <p class="text-gris">500 g</p>
+              <p class="font-titulo text-3xl mt-auto pt-4">4,50 €</p>
+              <button class="anadir boton bg-asfalto text-hormigon mt-3 py-2 uppercase font-bold" data-nombre="Disolvente en polvo" data-precio="4.50">Añadir</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="cesta" class="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row gap-10">
+      <div class="md:w-1/3">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl">Tu cesta</h2>
+        <p class="mt-4">Recogida en tienda. Pagas al recoger.</p>
+      </div>
+
+      <div class="md:w-2/3 border-4 border-current p-6">
+        <ul id="lista-cesta" class="flex flex-col">
+          <li id="cesta-vacia" class="text-gris">Todavía no has añadido nada.</li>
+        </ul>
+
+        <p class="flex justify-between font-titulo uppercase text-3xl mt-6 pt-4 border-t-4 border-current">
+          <span>Total</span>
+          <span id="total-cesta">0,00 €</span>
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3 mt-6">
+          <button id="vaciar-cesta" class="boton border-2 border-current px-6 py-3 uppercase font-bold">Vaciar</button>
+          <a class="boton sombra bg-spray text-asfalto px-6 py-3 uppercase font-bold text-center sm:flex-1">Proceder al pago</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-asfalto text-hormigon border-t-4 border-spray">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <h2 class="font-titulo uppercase text-2xl">Sobre nosotros</h2>
+      <a href="index.html#horario" class="enlace">Contacto</a>
+      <a href="#" class="enlace">Preguntas frecuentes</a>
+      <p class="text-sm text-gris">© 2026 Decoraciones Rodrisol S.L.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

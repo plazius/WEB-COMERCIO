@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tienda | Decoraciones Rodrisol S.L.</title>
+  <title>Tienda | Decoraciones Rodrisol S.L.</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
@@ -32,12 +33,16 @@
   <header class="sticky top-0 z-10 bg-hormigon dark:bg-asfalto border-b-4 border-asfalto dark:border-hormigon">
     <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
       <a href="index.html" class="font-titulo text-3xl uppercase">Rodri<span class="text-spray">sol</span></a>
+      <a href="index.html" class="font-titulo text-3xl uppercase">Rodri<span class="text-spray">sol</span></a>
 
       <nav class="hidden md:flex gap-8 uppercase font-bold text-sm">
         <a href="index.html" class="enlace">Inicio</a>
+        <a href="index.html" class="enlace">Inicio</a>
         <a href="#pinturas" class="enlace">Pinturas</a>
         <a href="#barnices" class="enlace">Barnices</a>
+        <a href="#barnices" class="enlace">Barnices</a>
         <a href="#material" class="enlace">Material</a>
+        <a href="#disolventes" class="enlace">Disolventes</a>
         <a href="#disolventes" class="enlace">Disolventes</a>
       </nav>
 
@@ -50,14 +55,21 @@
 
     <nav id="menu-movil" class="hidden flex-col px-4 pb-4 uppercase font-titulo text-3xl md:hidden">
       <a href="index.html" class="py-1 hover:text-spray">Inicio</a>
+      <a href="index.html" class="py-1 hover:text-spray">Inicio</a>
       <a href="#pinturas" class="py-1 hover:text-spray">Pinturas</a>
       <a href="#barnices" class="py-1 hover:text-spray">Barnices</a>
+      <a href="#barnices" class="py-1 hover:text-spray">Barnices</a>
       <a href="#material" class="py-1 hover:text-spray">Material</a>
+      <a href="#disolventes" class="py-1 hover:text-spray">Disolventes</a>
       <a href="#disolventes" class="py-1 hover:text-spray">Disolventes</a>
     </nav>
   </header>
 
   <main>
+
+    <section class="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row md:items-end gap-6">
+      <h1 class="aparecer font-titulo uppercase text-6xl md:text-8xl leading-none md:w-2/3">
+        La <span class="text-spray">tienda</span>
 
     <section class="max-w-6xl mx-auto px-4 py-16 flex flex-col md:flex-row md:items-end gap-6">
       <h1 class="aparecer font-titulo uppercase text-6xl md:text-8xl leading-none md:w-2/3">
@@ -123,6 +135,9 @@
     <section id="barnices" class="categoria bg-asfalto text-hormigon dark:bg-hormigon dark:text-asfalto" data-categoria="barnices">
       <div class="max-w-6xl mx-auto px-4 py-16">
         <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Barnices</h2>
+    <section id="barnices" class="categoria bg-asfalto text-hormigon dark:bg-hormigon dark:text-asfalto" data-categoria="barnices">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Barnices</h2>
 
         <div class="flex flex-wrap gap-6">
           <article class="tarjeta sombra grow basis-56 border-4 border-asfalto bg-hormigon text-asfalto flex flex-col" data-aos="fade-up">
@@ -167,6 +182,9 @@
         </div>
       </div>
     </section>
+
+    <section id="material" class="categoria max-w-6xl mx-auto px-4 py-16" data-categoria="material">
+      <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Material</h2>
 
     <section id="material" class="categoria max-w-6xl mx-auto px-4 py-16" data-categoria="material">
       <h2 class="font-titulo uppercase text-5xl md:text-7xl mb-10 border-b-4 border-current pb-2">Material</h2>
@@ -278,12 +296,39 @@
           <span id="total-cesta">0,00 €</span>
         </p>
 
+      <div class="md:w-2/3 border-4 border-current p-6">
+        <ul id="lista-cesta" class="flex flex-col">
+          <li id="cesta-vacia" class="text-gris">Todavía no has añadido nada.</li>
+        </ul>
+
+        <p class="flex justify-between font-titulo uppercase text-3xl mt-6 pt-4 border-t-4 border-current">
+          <span>Total</span>
+          <span id="total-cesta">0,00 €</span>
+        </p>
+
         <div class="flex flex-col sm:flex-row gap-3 mt-6">
           <button id="vaciar-cesta" class="boton border-2 border-current px-6 py-3 uppercase font-bold">Vaciar</button>
           <a href="tel:652686819" class="boton sombra bg-spray text-asfalto px-6 py-3 uppercase font-bold text-center sm:flex-1">Llamar para reservar</a>
         </div>
       </div>
     </section>
+
+  </main>
+
+  <footer class="bg-asfalto text-hormigon border-t-4 border-spray">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <h2 class="font-titulo uppercase text-2xl">Sobre nosotros</h2>
+      <a href="index.html#horario" class="enlace">Contacto</a>
+      <a href="#" class="enlace">Preguntas frecuentes</a>
+      <p class="text-sm text-gris">© 2026 Decoraciones Rodrisol S.L.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
 
   </main>
 
